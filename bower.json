@@ -1,0 +1,21 @@
+{
+  "name": "dihedral",
+  "version": "0.0.0",
+  "authors": [
+    "Enrique Tebari Barragan Corte <tebari@tebari.com>"
+  ],
+  "description": "A ES6 wrapper around AngularJS",
+  "license": "Apache-2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*"
+  }
+}
