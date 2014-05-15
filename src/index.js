@@ -3,7 +3,17 @@ import {
   setup
 } from './dh';
 
+import {
+  Inject,
+  annotate,
+  hasAnnotation
+} from './annotations';
+
 export default {
   angular,
-  setup
+  setup,
+
+  Inject,
+  annotate,
+  hasAnnotation
 };
