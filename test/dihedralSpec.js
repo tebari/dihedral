@@ -1,8 +1,12 @@
 import dihedral from 'dihedral';
 
-describe('dihedral', function() {
-  it('should exist and have angular', function () {
+describe('dihedral', () => {
+  it('should exist', () => {
     expect(dihedral).toBeDefined();
+  });
+
+  it('should have angular', () => {
     expect(dihedral.angular).toBeDefined();
+    expect(dihedral.angular).toBe(window.angular);
   });
 });

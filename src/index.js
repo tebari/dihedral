@@ -1,2 +1,9 @@
-var angular = window.angular;
-export {angular};
+import {
+  angular,
+  setup
+} from './dh';
+
+export default {
+  angular,
+  setup
+};
