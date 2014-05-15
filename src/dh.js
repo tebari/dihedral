@@ -1,7 +1,10 @@
+import {decorateInjector} from './injector';
+
 var angular = window.angular;
 
 function setup(angular) {
-  angular.module('dh', ['ng']);
+  var dh = angular.module('dh', ['ng']);
+  decorateInjector(dh);
 }
 
 if (angular) {
