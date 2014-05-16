@@ -14,10 +14,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/test-main.js',
+      'test-main.js',
       'bower_components/angular/angular.js',
+      'bower_components/angular-mocks/angular-mocks.js',
       {pattern: 'src/**/*.js', included: false},
-      {pattern: 'test/**/*Spec.js', included: false}
+      {pattern: 'test/**/*.js', included: false},
     ],
 
 
@@ -31,7 +32,7 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'src/**/*.js': ['traceur'],
-      'test/**/*Spec.js': ['traceur']
+      'test/**/*.js': ['traceur']
     },
 
     traceurPreprocessor: {
